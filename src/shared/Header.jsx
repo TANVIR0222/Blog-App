@@ -55,7 +55,7 @@ const Header = () => {
         {isMenuOpen && (
           <ul className=" fixed  top-[108px] left-0 w-full h-auto pb-8 bg-white shadow-sm z-50 ">
             {navItem.map((item, index) => (
-              <li className="mt-5 px-4">
+              <li key={index+1} className="mt-5 px-4">
                 <NavLink
                 onClick={() => setisMenuOpen(false)}
                 to={`${item.path}`}
