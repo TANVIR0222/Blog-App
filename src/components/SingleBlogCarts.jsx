@@ -1,5 +1,5 @@
-import { formatDate } from "../utils/formatDate";
 import EditorJSHTML from "editorjs-html";
+import { formateDate } from "../../utils/formateDate";
 
 const editorJSHTML = new EditorJSHTML();
 
@@ -22,7 +22,7 @@ const SingleBlogCarts = ({ blog }) => {
         <h1 className="md:text-4xl text-3xl  font-medium mb-4">{title}</h1>
         {/* TODO : need to change author */}
         <p className="mb-6">
-          {formatDate(createdAt)} by{" "}
+          {formateDate(createdAt)} by{" "}
           <span className="text-orange-400">Admin</span>{" "}
         </p>
       </div>
