@@ -1,3 +1,4 @@
+
 const Search = ({ search, handleSearchChange, handleSearch }) => {
     const handleKeyPress = (event) =>{
         if(event.key === 'Enter'){
@@ -5,6 +6,10 @@ const Search = ({ search, handleSearchChange, handleSearch }) => {
         }
 
     }
+
+    // get 
+
+
   return (
     <div className="px-2">
       <label className="flex items-center gap-2">
